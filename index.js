@@ -3,15 +3,14 @@ const { ApolloServer } = require('apollo-server')
 const mongoose = require('mongoose')
 // MongoDb connection link
 const { MongoLink } = require('./config')
-// Models import
-const User = require('./models/User')
 // type Definition & resolvers
 const typeDefs = require('./graphql/typeDefs')
 const resolvers = require('./graphql/resolvers')
 
 const server = new ApolloServer({
     typeDefs , 
-    resolvers
+    resolvers,
+    context: ({req}) => ({req})
 })
 
 mongoose.connect(MongoLink, { 
