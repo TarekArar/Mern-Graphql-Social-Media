@@ -19,7 +19,7 @@ mongoose.connect(MongoLink, {
     useUnifiedTopology: true
 })
     .then(() => {
-        return server.listen(5000)
+        return server.listen(5500)
         .then(
             res => console.log('Server running at '+ res.url)
             )

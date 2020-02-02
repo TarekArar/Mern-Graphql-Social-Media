@@ -36,8 +36,13 @@ const postsresolvers = {
                 body,
                 createdAt: new Date().toISOString()
             })
-
-            const post = await newPost.save()
+            let post
+            try {
+                post = await newPost.save()
+            }
+            catch(err) {
+                throw new Error(err)
+            }
 
             return post
         },

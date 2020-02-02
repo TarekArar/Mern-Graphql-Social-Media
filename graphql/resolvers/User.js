@@ -66,7 +66,7 @@ module.exports = {
                 createdAt: new Date().toISOString()
             })
 
-            const res = newUser.save()
+            const res = await newUser.save()
             // create auth token
             const token = makeToken(res)
 

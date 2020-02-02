@@ -1,10 +1,8 @@
 import React from 'react';
-
+import ListPosts from './Layout/posts/ListPosts'
 const Home = () => {
     return (
-        <div class="ui container">
-            Hello from Home
-        </div>
+        <ListPosts />
     );
 }
 
