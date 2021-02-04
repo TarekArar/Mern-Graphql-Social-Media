@@ -1,3 +1,3 @@
 # Mern-Graphql-Social-Media
 
-a Social Media App prototype made with React/Nodejs/Express/MongoDB/GraphQl 
+A social media app made with React/Nodejs/Express/MongoDB/GraphQl 
